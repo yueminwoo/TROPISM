@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a { 
+    color: black;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+#header {
+    position: relative;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+#logo {
+    display: inline-flex;
+    width: 250px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    background-color: aqua;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 900px;
+    height: 90px;
+}
+#topMenu > li:hover > ul {
+    display: block;
+}
+#topMenu > li:hover > ul > li {
+    width: 150px;
+    margin: 15px auto;
+}
+#topMenu > li > ul > li > a:hover {
+    color: greenyellow;
+}
+#topMenu > li {
+    position: relative;
+}
+#topMenu > li > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+#topMenu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+#slideShow {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#slideShow img {
+    vertical-align: top;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: 236px;
+    margin-top: 32px;
+}
+#contents {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+#tabMenu {
+    position: absolute;
+    left: 0;
+    width: 800px;
+    height: 100%;
+}
+#tabMenu > input[type="radio"] {
+    display: none;
+}
+#tabMenu > label {
+    margin: 0px 170px;
+    padding: 0 5px;
+}
+#tabMenu > label:hover {
+    color: greenyellow;
+    cursor: pointer;
+}
+#tabMenu > input:checked + label {
+    background-color: blanchedalmond;
+}
+.tabContents {
+    display: none;
+}
+.tabContents > ul {
+    list-style: lower-greek;
+}
+#tab1:checked ~ #papers {
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 0;
+} 
+#tab1:checked ~ #papers > ul {
+    margin-left: 30px;
+}
+#tab1:checked ~ #papers > ul > li {
+    padding: 10px 0;
+}
+#tab2:checked ~ #books {
+    display: block;
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+#tab2:checked ~ #books > ul {
+    margin-left: 30px;
+}
+#tab2:checked ~ #books > ul > li {
+    padding: 20px 0;
+}
+#links {
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 300px;
+}
+#links ul li {
+    float: left;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+
+}
+#instagram a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    height: 300px;
+    background-image: url('images/lifestyle.jpg');
+    background-size: cover;
+    border-radius: 100%;
+    
+}
+#email a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 300px;
+    background-image: url('images/minor.jpg');
+    background-size: cover;
+    border-radius: 100%;
+}
+footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+#bottom ul li {
+    float: left;
+    margin: 30px 50px 10px 50px;
+    font-size: 12px;
+}
+#bottom > h1 {
+    float: left;
+    margin-top: 30px;
+}
+#bott1 {
+    margin-left: 20px;
+}
+#bottom ul li span {
+    display: block;
+}
